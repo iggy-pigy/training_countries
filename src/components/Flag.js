@@ -4,7 +4,7 @@ const Flag = (props) => {
     const { flag } = props
     return (
         <div>
-            <img src={flag} alt="flag" width="180" height="130" />
+            <img src={flag} alt="flag" width="15%" height="15%" />
         </div>
     );
 };
