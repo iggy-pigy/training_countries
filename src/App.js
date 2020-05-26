@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import Countries from "./components/Countries";
 
 
 const App = () => {
@@ -40,7 +41,7 @@ const App = () => {
   return (
     <div>
       <h5>find countries: <input onChange={handleFilter} value={filterTerm} /></h5>
-      <Countries countries={filterResult} />
+      <Countries countries={filterResult.slice(0, 10)} />
     </div>
   );
 }
